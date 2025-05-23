@@ -17,7 +17,7 @@
    <input type="password" name="pwd_repeat" placeholder="Repeat Password" required><br>
    <button type="submit">Register</button>
    <input type="hidden" name="action" value="register">
-   <p><a href="index.php">Back to sign in</a></p>
+   <p><a href="login.php">Back to sign in</a></p>
 
 </form>
 

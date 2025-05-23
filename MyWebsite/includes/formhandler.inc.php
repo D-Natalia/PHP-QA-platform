@@ -53,7 +53,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
    }
 }else if($action=="login"){
     if (empty($username) || empty($pwd)) {
-        header("Location: ../register.php?error=empty_field");
+        header("Location: ../login.php?error=empty_field");
         exit();
     }
     $query = "SELECT * FROM users WHERE username = ?";
@@ -68,7 +68,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         header("Location: ../login.php?signin=incorect_password");
         exit();
     }
-    header("Location: ../login.php?signin=success");
+    header("Location: ../index.php?signin=success");
     exit();
 
     
@@ -77,3 +77,4 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     header("Location: ../login.php");
     exit();
 }
+ 

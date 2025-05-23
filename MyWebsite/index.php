@@ -6,18 +6,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body class="dashboard">
 
-<body>
+  <div class="startpage-container">
+    <h1>Welcome to General Knowledge Quizzes</h1>
+    <p>Choose the quiz you want to take</p>
 
-   <form action="includes/formhandler.inc.php" method="post">
-   <h3>Sing in</h3> 
-   <input type="text" name="username" placeholder="Username"><br>
-   <input type="password" name="pwd" placeholder="Password"><br>
-   <button type="submit">Sing in</button><br>
-   <p>New account?<a href="register.php">Register here</a></p>
-   <input type="hidden" name="action" value="login">
+<table>
+      <tr>
+        <th>Quiz Name</th>
+        <th>Action</th>
+      </tr>
+      
+      <tr>
+        <td>Science Quiz</td>
+        <td>
+          <form action="quiz_science.php" method="post">
+            <button type="submit">Start Test</button>
+          </form>
+        </td>
+      </tr>
 
-</form>
+      <tr>
+        <td>History Quiz</td>
+        <td>
+          <form action="quiz_history.php" method="post">
+            <button type="submit">Start Test</button>
+          </form>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Geography Quiz</td>
+        <td>
+          <form action="quiz_geography.php" method="post">
+            <button type="submit">Start Test</button>
+          </form>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Math Quiz</td>
+        <td>
+          <form action="quiz_math.php" method="post">
+            <button type="submit">Start Test</button>
+          </form>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Literature Quiz</td>
+        <td>
+          <form action="quiz_literature.php" method="post">
+            <button type="submit">Start Test</button>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
 
 </body>
 </html>
