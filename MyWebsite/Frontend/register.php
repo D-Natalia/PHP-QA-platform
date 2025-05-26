@@ -10,7 +10,7 @@
 <body>
 
 
-<form action="includes/formhandler.inc.php" method="post">
+<form action="Backend/login_register.inc.php" method="post">
 <h3>Register form</h3>
    <input type="text" name="username" placeholder="Username" required><br>
    <input type="password" name="pwd" placeholder="Password" required><br>

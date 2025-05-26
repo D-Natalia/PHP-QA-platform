@@ -21,8 +21,8 @@
       <tr>
         <td>Science Quiz</td>
         <td>
-          <form action="quiz_science.php" method="post">
-            <button type="submit">Start Test</button>
+          <form action="sciencequiz.php" method="get">
+            <button type="submit">Start quiz</button>
           </form>
         </td>
       </tr>
@@ -30,7 +30,7 @@
       <tr>
         <td>History Quiz</td>
         <td>
-          <form action="quiz_history.php" method="post">
+          <form action="Beckend/quiz_history.php" method="post">
             <button type="submit">Start Test</button>
           </form>
         </td>
@@ -39,7 +39,7 @@
       <tr>
         <td>Geography Quiz</td>
         <td>
-          <form action="quiz_geography.php" method="post">
+          <form action="Beckend/quiz_geography.php" method="post">
             <button type="submit">Start Test</button>
           </form>
         </td>
@@ -48,7 +48,7 @@
       <tr>
         <td>Math Quiz</td>
         <td>
-          <form action="quiz_math.php" method="post">
+          <form action="Beckend/quiz_math.php" method="post">
             <button type="submit">Start Test</button>
           </form>
         </td>
@@ -57,7 +57,7 @@
       <tr>
         <td>Literature Quiz</td>
         <td>
-          <form action="quiz_literature.php" method="post">
+          <form action="Beckend/quiz_literature.php" method="post">
             <button type="submit">Start Test</button>
           </form>
         </td>

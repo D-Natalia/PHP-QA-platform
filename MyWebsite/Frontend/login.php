@@ -9,7 +9,7 @@
 
 <body>
 
-   <form action="includes/formhandler.inc.php" method="post">
+   <form action="index.php" method="post">
    <h3>Sing in</h3> 
    <input type="text" name="username" placeholder="Username"><br>
    <input type="password" name="pwd" placeholder="Password"><br>
