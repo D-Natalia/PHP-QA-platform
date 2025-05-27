@@ -3,11 +3,16 @@ header('Content-Type: application/json');
 require_once __DIR__ . '/../DBconfig/DBconfig.inc.php';
 
 try {
-    $stmt = $pdo->query("SELECT * FROM questions ORDER BY id ASC LIMIT 1 OFFSET 0");
-    $question = $stmt->fetch(PDO::FETCH_ASSOC);
+ 
+    $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+$domain_id = 1;
 
+$sql = "SELECT * FROM questions WHERE domain_id = ? ORDER BY id ASC LIMIT 1 OFFSET $offset";
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$domain_id]);
+$question = $stmt->fetch(PDO::FETCH_ASSOC);
     if (!$question) {
-        echo json_encode(['error' => 'Nu s-au găsit întrebări']);
+        echo json_encode(['error' => 'No questions found.']);
         exit;
     }
 

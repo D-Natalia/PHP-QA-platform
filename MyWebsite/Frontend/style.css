@@ -50,4 +50,20 @@ body {
   button:hover {
     background-color:  #a200ff;
   }
+  .sciencequiz table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .sciencequiz th, 
+  .sciencequiz td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .sciencequiz th {
+    background-color: #eee;
+  }
  
