@@ -30,8 +30,8 @@
       <tr>
         <td>History Quiz</td>
         <td>
-          <form action="Beckend/quiz_history.php" method="post">
-            <button type="submit">Start Test</button>
+          <form action="historyquiz.php" method="post">
+            <button type="submit">Start Quiz</button>
           </form>
         </td>
       </tr>
@@ -39,8 +39,8 @@
       <tr>
         <td>Geography Quiz</td>
         <td>
-          <form action="Beckend/quiz_geography.php" method="post">
-            <button type="submit">Start Test</button>
+          <form action="geographyquiz.php" method="post">
+            <button type="submit">Start Quiz</button>
           </form>
         </td>
       </tr>
@@ -48,8 +48,8 @@
       <tr>
         <td>Math Quiz</td>
         <td>
-          <form action="Beckend/quiz_math.php" method="post">
-            <button type="submit">Start Test</button>
+          <form action="mathquiz.php" method="post">
+            <button type="submit">Start Quiz</button>
           </form>
         </td>
       </tr>
@@ -57,12 +57,13 @@
       <tr>
         <td>Literature Quiz</td>
         <td>
-          <form action="Beckend/quiz_literature.php" method="post">
-            <button type="submit">Start Test</button>
+          <form action="literaturequiz.php" method="post">
+            <button type="submit">Start Quiz</button>
           </form>
         </td>
       </tr>
     </table>
+    <p><a href="login.php">Logout</a></p>
   </div>
 
 </body>

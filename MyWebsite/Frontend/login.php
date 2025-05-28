@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-   <form action="index.php" method="post">
+   <form action="../Backend/login_register.inc.php" method="post">
    <h3>Sing in</h3> 
    <input type="text" name="username" placeholder="Username"><br>
    <input type="password" name="pwd" placeholder="Password"><br>

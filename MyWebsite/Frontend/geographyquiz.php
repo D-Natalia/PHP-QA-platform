@@ -1,14 +1,14 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
-  <title>Science Quiz</title>
+  <title>Geography Quiz</title>
 </head>
-<body class="sciencequiz">
-  <div class="sciencequiz-container">
-    <h1>Science Quiz</h1>
+<body class="geographyquiz">
+  <div class="geographyquiz-container">
+    <h1>History Quiz</h1>
     <p id="question">Loading question...</p>
     <form id="quiz-form" style="display: none;">
       <table id="answers-table">
@@ -19,7 +19,7 @@
     <p id="score">Score: 0/5</p>
     <p><a href="index.php">Back to home</a></p>
   </div>
-
+  
   <script>
     const questionElement = document.getElementById('question');
     const scoreElement = document.getElementById('score');
@@ -31,7 +31,7 @@
     const totalQuestions = 5; 
 
     function loadQuestion(index) {
-      fetch(`../Backend/quiz_science.php?offset=${index}`)
+      fetch(`../Backend/quiz_geography.php?offset=${index}`)
         .then(response => response.json())
         .then(data => {
           if (data.error) {

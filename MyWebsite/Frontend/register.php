@@ -10,7 +10,7 @@
 <body>
 
 
-<form action="Backend/login_register.inc.php" method="post">
+<form action="../Backend/login_register.inc.php" method="post">
 <h3>Register form</h3>
    <input type="text" name="username" placeholder="Username" required><br>
    <input type="password" name="pwd" placeholder="Password" required><br>
@@ -20,7 +20,5 @@
    <p><a href="login.php">Back to sign in</a></p>
 
 </form>
-
-
 </body>
 </html>
