@@ -1,5 +1,6 @@
 <?php
 //echo "Am ajuns în formhandler!";
+ session_start();
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -71,13 +72,17 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $stmt->execute([$username]);
         if($stmt->rowCount()==0){
             header("Location: ../Frontend/login.php?signin=user_doesnt_exist");
+            header("Location: ../Frontend/login.php?error=user_doesnt_exist");
             exit();
         }
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
     if (!password_verify($pwd, $user['pwd'])) {
         header("Location: ../Frontend/login.php?signin=incorect_password");
+        header("Location: ../Frontend/login.php?error=incorect_password");
         exit();
     }
+
+    $_SESSION['logged_in']=true;
     header("Location: ../Frontend/index.php?signin=success");
     exit();
 

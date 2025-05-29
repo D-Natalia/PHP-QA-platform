@@ -1,3 +1,10 @@
+<?php
+session_start(); 
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: login.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +26,10 @@
     <p id="score">Score: 0/5</p>
     <p><a href="index.php">Back to home</a></p>
   </div>
+<script src="../Frontend/script_quiz.js"></script>
+<script>
+  initQuiz('../Backend/quiz_geography.php'); 
+</script>  
   
   <script>
     const questionElement = document.getElementById('question');

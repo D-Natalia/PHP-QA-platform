@@ -1,3 +1,10 @@
+<?php
+session_start(); 
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: login.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
   <title>Science Quiz</title>
+  <title>History Quiz</title>
 </head>
 <body class="historyquiz">
   <div class="historyquiz-container">

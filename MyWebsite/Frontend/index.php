@@ -1,3 +1,10 @@
+<?php
+session_start(); 
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: login.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +13,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="dashboard">
 
   <div class="startpage-container">
@@ -64,6 +72,7 @@
       </tr>
     </table>
     <p><a href="login.php">Logout</a></p>
+    <p><a href="../Backend/logout.php">Logout</a></p>
   </div>
 
 </body>

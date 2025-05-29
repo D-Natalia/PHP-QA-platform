@@ -23,6 +23,7 @@ class QuestionsHandler{
         $stmt->execute([$question['id']]);
         $answers = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
+        shuffle($answers);
         return [
             'question' => $question['question'],
             'answer_text' => $answers
